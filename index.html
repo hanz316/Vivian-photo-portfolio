@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivian Li | Photography Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(to right, #fef6ff, #f0e4f8);
+      color: #222;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: rgba(85, 65, 130, 0.75);
+      color: #fff;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(8px);
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #e7caff;
+      animation: fadeIn 2s ease-in;
+    }
+    nav {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    nav a {
+      background-color: #fff0f8;
+      padding: 10px 25px;
+      border-radius: 30px;
+      color: #553c9a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border: 2px solid #a76dff;
+    }
+    nav a:hover {
+      background-color: #a76dff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 5%;
+      background: linear-gradient(to bottom, #cba6f7, #fff);
+      color: #4a2f8c;
+      text-align: center;
+    }
+    .hero-text h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-family: 'Great Vibes', cursive;
+    }
+    .hero-text p {
+      font-size: 1.2em;
+    }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 5%;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 40px;
+    }
+    .unit-preview {
+      width: 320px;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+      animation: fadeInUp 1s ease forwards;
+      cursor: pointer;
+    }
+    .unit-preview img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .unit-preview:hover img {
+      transform: scale(1.05);
+    }
+    .unit-preview h3 {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.3em;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(85, 65, 130, 0.75);
+      color: #e7caff;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      backdrop-filter: blur(8px);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vivian Li</h1>
+    <p>Capturing Light, Emotion, and Story</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="unit1.html">Unit 1</a>
+      <a href="unit2.html">Unit 2</a>
+      <a href="unit3.html">Unit 3</a>
+      <a href="inspiration.html">Inspiration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to My Online Photography Portfolio</h2>
+        <p>Explore visual stories through my lens — from quiet domestic moments to imaginative digital creations.</p>
+      </div>
+    </section>
+    <section class="highlights">
+      <div class="unit-preview" onclick="location.href='unit1.html'">
+        <img src="images/unit1 (1).jpg" alt="Unit 1 preview">
+        <h3>Unit 1: Domestic Storytelling</h3>
+      </div>
+      <div class="unit-preview" onclick="location.href='unit2.html'">
+        <img src="images/unit2 (1).jpg" alt="Unit 2 preview">
+        <h3>Unit 2: New Perspectives</h3>
+      </div>
+      <div class="unit-preview" onclick="location.href='unit3.html'">
+        <img src="images/u3-1.png" alt="Unit 3 preview">
+        <h3>Unit 3: Narrative Moments</h3>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Vivian Li | All images & content by the artist.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1: Domestic Storytelling</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fef6ff, #f0e4f8);
+      color: #222;
+    }
+    header, footer {
+      background-color: rgba(85, 65, 130, 0.75);
+      color: #f7d6ff;
+      text-align: center;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      animation: fadeInDown 1s ease;
+    }
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      background-color: #fff0f8;
+      color: #553c9a;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border: 2px solid #a76dff;
+    }
+    nav a:hover {
+      background-color: #a76dff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(12px);
+      animation: fadeIn 1.5s ease;
+    }
+    h2 {
+      font-size: 2em;
+      font-family: 'Great Vibes', cursive;
+      color: #553c9a;
+      margin-bottom: 15px;
+    }
+    .photo-entry {
+      margin-bottom: 50px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+    .photo-entry img {
+      max-width: 80%;
+      height: auto;
+      max-height: 360px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+    .photo-entry img:hover {
+      transform: scale(1.03);
+      opacity: 0.95;
+    }
+    .photo-entry h3 {
+      margin-top: 15px;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: #4a2f8c;
+    }
+    .photo-entry p {
+      font-size: 1.05em;
+      color: #333;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    footer {
+      background-color: rgba(85, 65, 130, 0.75);
+      color: #f7d6ff;
+      padding: 30px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Unit 1: Domestic Storytelling</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="unit1.html">Unit 1</a>
+      <a href="unit2.html">Unit 2</a>
+      <a href="unit3.html">Unit 3</a>
+      <a href="inspiration.html">Inspiration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Photo Gallery</h2>
+    <div class="photo-entry">
+      <img src="images/unit1 (1).jpg" alt="Cat on bed">
+      <h3>Comfort in Light</h3>
+      <p>A cozy scene where soft morning light frames a sleepy cat curled on the blanket. The textures and tones evoke comfort and peace.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (2).jpg" alt="Cat and mirror">
+      <h3>Curious Reflections</h3>
+      <p>The cat pauses in front of the mirror, creating a moment of self-contemplation and double identity.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (3).jpg" alt="Cat near flowers">
+      <h3>Floral Stillness</h3>
+      <p>Beside dried blossoms, the cat’s gentle expression mirrors the calm atmosphere of domestic still life.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (4).jpg" alt="Cat on blanket">
+      <h3>Wrapped in Warmth</h3>
+      <p>The layering of fabrics around the cat enhances a sense of softness and safety, like a home within home.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (5).jpg" alt="Cat with candle">
+      <h3>Evening Glow</h3>
+      <p>Soft lighting from the candle casts a gentle mood, as the cat looks on quietly — a study of quiet moments.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (6).jpg" alt="Playful cat">
+      <h3>Play and Pause</h3>
+      <p>A motionless pause in play — the cat glances at the toy, freezing a moment of anticipation.</p>
+    </div>
+    <div class="photo-entry">
+      <img src="images/unit1 (7).jpg" alt="Window gaze">
+      <h3>Through the Window</h3>
+      <p>Looking outward, the cat watches the world from its familiar perch — a classic domestic frame.</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Vivian Li | Unit 1: Domestic Storytelling
+  </footer>
+</body>
+</html>

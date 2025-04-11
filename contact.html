@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vivian Li</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(to right, #fef6ff, #f0e4f8);
+      color: #222;
+    }
+    header, footer {
+      background-color: rgba(85, 65, 130, 0.75);
+      color: #f7d6ff;
+      text-align: center;
+      padding: 30px 20px;
+      backdrop-filter: blur(8px);
+    }
+    header h1 {
+      font-size: 3.5em;
+      font-family: 'Great Vibes', cursive;
+      animation: fadeInDown 1s ease;
+    }
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      background-color: #fff0f8;
+      color: #553c9a;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border: 2px solid #a76dff;
+    }
+    nav a:hover {
+      background-color: #a76dff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      animation: fadeIn 1.5s ease;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      font-size: 2em;
+      font-family: 'Great Vibes', cursive;
+      color: #553c9a;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #553c9a;
+      border: 2px solid #553c9a;
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    .social-icons a:hover {
+      background-color: #553c9a;
+      color: #fff0f7;
+      transform: scale(1.05);
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #a76dff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 2px solid #a76dff;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    a.back:hover {
+      background-color: #a76dff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="unit1.html">Unit 1</a>
+      <a href="unit2.html">Unit 2</a>
+      <a href="unit3.html">Unit 3</a>
+      <a href="inspiration.html">Inspiration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Let’s Connect!</h2>
+    <p>If you have questions, feedback, or simply want to say hi, feel free to reach out. I’m always open to sharing ideas, collaborating, or talking about photography!</p>
+
+    <div class="social-icons">
+      <a href="mailto:your-email@example.com">📧 Email</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">📷 Instagram</a>
+      <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+    </div>
+
+    <a href="index.html" class="back">← Back to Home</a>
+  </main>
+  <footer>
+    &copy; 2025 Vivian Li | Let's Stay in Touch.
+  </footer>
+</body>
+</html>
