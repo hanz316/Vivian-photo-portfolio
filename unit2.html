@@ -1,159 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 2: New Perspectives</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit 2 - Vivian Li</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'DM Sans', sans-serif;
-      margin: 0;
       background: linear-gradient(to right, #fef6ff, #f0e4f8);
-      color: #111;
+      color: #222;
+      padding: 40px;
+      line-height: 1.6;
     }
-    header, footer {
-      background-color: rgba(85, 65, 130, 0.75);
-      color: #f7d6ff;
-      padding: 30px;
-      text-align: center;
-      backdrop-filter: blur(8px);
-    }
-    header h1 {
+    h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3em;
-      animation: fadeInDown 1s ease;
+      text-align: center;
+      margin-bottom: 10px;
     }
-    nav {
-      margin-top: 15px;
+    .description {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gallery {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    nav a {
-      background-color: #fff0f8;
-      color: #553c9a;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      border: 2px solid #a76dff;
-    }
-    nav a:hover {
-      background-color: #a76dff;
-      color: #fff;
-      transform: scale(1.05);
-    }
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(12px);
-      animation: fadeIn 1.5s ease;
-    }
-    h2 {
-      font-size: 2em;
-      font-family: 'Great Vibes', cursive;
-      color: #553c9a;
-      margin-bottom: 20px;
-    }
-    .gallery-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
+      gap: 40px;
     }
     .photo-block {
-      flex: 1 1 calc(33% - 20px);
-      min-width: 280px;
+      max-width: 320px;
       background: #fff;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      overflow: hidden;
       transition: transform 0.3s ease;
     }
     .photo-block img {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      height: auto;
+      display: block;
     }
-    .photo-block h3 {
+    .photo-info {
+      padding: 15px 20px;
+    }
+    .photo-info h3 {
       font-size: 1.2em;
-      color: #4a2f8c;
-      margin: 10px 0 5px;
+      margin-bottom: 10px;
+      font-family: 'Great Vibes', cursive;
     }
-    .photo-block p {
-      font-size: 1em;
-      color: #444;
-    }
-    footer {
-      background-color: rgba(85, 65, 130, 0.75);
-      color: #f7d6ff;
-      text-align: center;
-      padding: 30px;
-      backdrop-filter: blur(8px);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .photo-info p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Unit 2: New Perspectives</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="unit1.html">Unit 1</a>
-      <a href="unit2.html">Unit 2</a>
-      <a href="unit3.html">Unit 3</a>
-      <a href="inspiration.html">Inspiration</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <div class="container">
-    <h2>Photo Showcase</h2>
-    <div class="gallery-row">
-      <div class="photo-block">
-        <img src="images/unit2 (1).jpg" alt="Digital collage">
-        <h3>Digital Commentary</h3>
-        <p>A surreal digital collage exploring the chaos and containment themes of pandemic life.</p>
-      </div>
-      <div class="photo-block">
-        <img src="images/unit2 (2).jpg" alt="Color portrait">
-        <h3>Split Identity</h3>
-        <p>A high-contrast portrait using color and symmetry to suggest inner duality and emotion.</p>
-      </div>
-      <div class="photo-block">
-        <img src="images/unit2 (3).jpg" alt="Cat eye zoom">
-        <h3>Surreal Gaze</h3>
-        <p>Zoomed-in and reimagined, the eye of a cat becomes an abstract portal of reflection.</p>
-      </div>
-      <div class="photo-block">
-        <img src="images/unit2 (4).jpg" alt="Candle in dark">
-        <h3>Solitude Glow</h3>
-        <p>A candle's warm flicker pierces the darkness — symbolizing quiet focus and personal space.</p>
-      </div>
-      <div class="photo-block">
-        <img src="images/unit2 (5).jpg" alt="Portrait with trash">
-        <h3>Message in the Frame</h3>
-        <p>A sustainability-themed portrait, combining expression and composition for social impact.</p>
+  <h1>Unit 2: New Perspectives</h1>
+  <p class="description">
+    This unit embraces creative reinterpretation and abstract storytelling. Using digital editing and mixed media, I explored themes of identity, awareness, and sustainability through visual experimentation.
+  </p>
+  <div class="gallery">
+    <div class="photo-block">
+      <img src="images/unit2 (1).jpg" alt="Digital collage COVID">
+      <div class="photo-info">
+        <h3>Screened Reality</h3>
+        <p>A digital collage mixing pandemic visuals and personal objects to reflect isolation and global awareness.</p>
+        <p><strong>Composition:</strong> Layered montage offers chaos and cohesion simultaneously.</p>
+        <p><strong>Lighting:</strong> Artificial composited light simulates news-like urgency.</p>
+        <p><strong>Element of Design:</strong> Shape—cutouts overlap to form complexity.</p>
+        <p><strong>Principle of Design:</strong> Contrast—sharp edges vs. soft color fields convey tension.</p>
       </div>
     </div>
+
+    <div class="photo-block">
+      <img src="images/unit2 (2).jpg" alt="Portrait in red and blue">
+      <div class="photo-info">
+        <h3>Dual Self</h3>
+        <p>A split-tone portrait visualizing the psychological duality of personal identity.</p>
+        <p><strong>Composition:</strong> Symmetry through mirrored halves emphasizes tension.</p>
+        <p><strong>Lighting:</strong> Colored gels cast opposing tones across the face.</p>
+        <p><strong>Element of Design:</strong> Color—red and blue dominate the emotional tone.</p>
+        <p><strong>Principle of Design:</strong> Emphasis—the face remains central and confronting.</p>
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/unit2 (3).jpg" alt="Surreal cat eye">
+      <div class="photo-info">
+        <h3>Reflective Portal</h3>
+        <p>A surreal view through a cat's eye offers new perspective on scale and environment.</p>
+        <p><strong>Composition:</strong> Extreme close-up magnifies details and distortion.</p>
+        <p><strong>Lighting:</strong> Back lighting enhances reflection and clarity in the eye.</p>
+        <p><strong>Element of Design:</strong> Texture—fur and glassy eye surface stand in contrast.</p>
+        <p><strong>Principle of Design:</strong> Focus—only the pupil is sharp, directing attention.</p>
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/unit2 (4).jpg" alt="Candle in dark">
+      <div class="photo-info">
+        <h3>Solitary Glow</h3>
+        <p>A candle burns alone in the darkness, symbolizing hope and quiet endurance.</p>
+        <p><strong>Composition:</strong> Centered and minimal, reinforcing isolation.</p>
+        <p><strong>Lighting:</strong> Low key lighting emphasizes warmth in dark tones.</p>
+        <p><strong>Element of Design:</strong> Value—shadows define depth and mood.</p>
+        <p><strong>Principle of Design:</strong> Unity—elements support a consistent emotional tone.</p>
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/unit2 (5).jpg" alt="Eco-portrait with bamboo cup">
+      <div class="photo-info">
+        <h3>Sustainable Self</h3>
+        <p>A portrait holding eco-tools to reflect conscious living and environmental identity.</p>
+        <p><strong>Composition:</strong> Triangular composition with hand, face, and object.</p>
+        <p><strong>Lighting:</strong> Soft front lighting gives clarity and natural tones.</p>
+        <p><strong>Element of Design:</strong> Line—the bamboo straw points up toward the subject’s face.</p>
+        <p><strong>Principle of Design:</strong> Balance—objects are visually equal across the frame.</p>
+      </div>
+    </div>
+
   </div>
-  <footer>
-    &copy; 2025 Vivian Li | Unit 2: New Perspectives
-  </footer>
 </body>
 </html>
