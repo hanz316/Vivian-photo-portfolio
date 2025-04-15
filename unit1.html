@@ -57,7 +57,41 @@
     .photo-info p {
       margin: 5px 0;
     }
+    .artist-toggle {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 20px;
+      font-size: 0.95em;
+      font-weight: bold;
+      background-color: #c7a5e6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .artist-toggle:hover {
+      background-color: #a76dff;
+    }
+    .artist-statement {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 10px 20px 20px;
+      padding: 15px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      display: none;
+      font-size: 0.95em;
+    }
+    .artist-statement p {
+      margin-bottom: 10px;
+    }
   </style>
+  <script>
+    function toggleStatement(id) {
+      const box = document.getElementById(id);
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
   <h1>Unit 1: Domestic Storytelling</h1>
@@ -66,82 +100,112 @@
   </p>
   <div class="gallery">
     <div class="photo-block">
-      <img src="images/unit1 (1).jpg" alt="Cat close-up eye">
-      <div class="photo-info">
-        <h3>Stargazing Gaze</h3>
-        <p>A close-up of a cat's eye reflecting stars, representing imagination and quiet wonder.</p>
-        <p><strong>Composition:</strong> Extreme close-up focuses all attention on the eye, drawing viewers in intimately.</p>
-        <p><strong>Lighting:</strong> Natural side lighting highlights the textures and depth of the fur and eye.</p>
-        <p><strong>Element of Design:</strong> Texture—detailed fur and glistening eye surface stand out.</p>
-        <p><strong>Principle of Design:</strong> Emphasis—everything directs the viewer to the sparkling eye.</p>
-      </div>
+  <img src="images/unit1 (2).jpg" alt="Paw prints in snow">
+  <div class="photo-info">
+    <h3>Silent Footsteps</h3>
+    <p>Fresh paw prints left on pristine snow suggest mystery and solitude.</p>
+    <p><strong>Composition:</strong> Leading lines of the paw prints guide the eye naturally through the scene.</p>
+    <p><strong>Lighting:</strong> Ambient daylight keeps the snow soft and untouched.</p>
+    <p><strong>Element of Design:</strong> Pattern—repeating prints establish rhythm and presence.</p>
+    <p><strong>Principle of Design:</strong> Rhythm—consistent spacing creates a flow across the image.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement2')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement2">
+      <p><strong>WHAT:</strong> This photograph captures paw prints in the snow as a quiet trail of an unseen visitor.</p>
+      <p><strong>HOW:</strong> I used my smartphone camera during a calm winter afternoon, shooting from a low angle to emphasize the depth of tracks using natural light.</p>
+      <p><strong>WHY:</strong> I wanted to express the idea that even in stillness, presence and movement are felt—offering a subtle narrative of existence.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (2).jpg" alt="Paw prints in snow">
-      <div class="photo-info">
-        <h3>Silent Footsteps</h3>
-        <p>Fresh paw prints left on pristine snow suggest mystery and solitude.</p>
-        <p><strong>Composition:</strong> Leading lines of the paw prints guide the eye naturally through the scene.</p>
-        <p><strong>Lighting:</strong> Ambient daylight keeps the snow soft and untouched.</p>
-        <p><strong>Element of Design:</strong> Pattern—repeating prints establish rhythm and presence.</p>
-        <p><strong>Principle of Design:</strong> Rhythm—consistent spacing creates a flow across the image.</p>
-      </div>
+  </div>
+</div>
+
+<div class="photo-block">
+  <img src="images/unit1 (3).jpg" alt="Books and flower">
+  <div class="photo-info">
+    <h3>Quiet Study</h3>
+    <p>A still life of books and a flower conveys a peaceful moment of reflection.</p>
+    <p><strong>Composition:</strong> Rule of thirds balances the books and plant across the shelf.</p>
+    <p><strong>Lighting:</strong> Soft natural light gently illuminates the wooden textures.</p>
+    <p><strong>Element of Design:</strong> Shape—rectangular books vs. round petals contrast subtly.</p>
+    <p><strong>Principle of Design:</strong> Balance—visual weight is evenly distributed.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement3')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement3">
+      <p><strong>WHAT:</strong> I arranged a small bookshelf scene using a real flower and a few of my favorite history books.</p>
+      <p><strong>HOW:</strong> Taken with my phone, I framed the scene with natural afternoon light from a nearby window for a warm tone.</p>
+      <p><strong>WHY:</strong> This image represents how still objects in personal spaces can reflect character and comfort.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (3).jpg" alt="Books and flower">
-      <div class="photo-info">
-        <h3>Quiet Study</h3>
-        <p>A still life of books and a flower conveys a peaceful moment of reflection.</p>
-        <p><strong>Composition:</strong> Rule of thirds balances the books and plant across the shelf.</p>
-        <p><strong>Lighting:</strong> Soft natural light gently illuminates the wooden textures.</p>
-        <p><strong>Element of Design:</strong> Shape—rectangular books vs. round petals contrast subtly.</p>
-        <p><strong>Principle of Design:</strong> Balance—visual weight is evenly distributed.</p>
-      </div>
+  </div>
+</div>
+
+<div class="photo-block">
+  <img src="images/unit1 (4).jpg" alt="Cat resting on white blanket">
+  <div class="photo-info">
+    <h3>Warm Nest</h3>
+    <p>A cat snuggled on a blanket evokes coziness and contentment.</p>
+    <p><strong>Composition:</strong> Framing using the blanket encircles the subject protectively.</p>
+    <p><strong>Lighting:</strong> Diffused soft light enhances the warmth and softness of the scene.</p>
+    <p><strong>Element of Design:</strong> Line—curves of the blanket guide the viewer.</p>
+    <p><strong>Principle of Design:</strong> Harmony—the entire image feels cohesive and gentle.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement4')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement4">
+      <p><strong>WHAT:</strong> This photo shows my cat nestled inside a folded fleece blanket on my bed.</p>
+      <p><strong>HOW:</strong> I used my phone to capture the overhead view, making use of the curves and soft textures to guide the eye inward.</p>
+      <p><strong>WHY:</strong> I wanted to capture the feeling of safety and warmth that pets bring into everyday moments.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (4).jpg" alt="Cat resting on white blanket">
-      <div class="photo-info">
-        <h3>Warm Nest</h3>
-        <p>A cat snuggled on a blanket evokes coziness and contentment.</p>
-        <p><strong>Composition:</strong> Framing using the blanket encircles the subject protectively.</p>
-        <p><strong>Lighting:</strong> Diffused soft light enhances the warmth and softness of the scene.</p>
-        <p><strong>Element of Design:</strong> Line—curves of the blanket guide the viewer.</p>
-        <p><strong>Principle of Design:</strong> Harmony—the entire image feels cohesive and gentle.</p>
-      </div>
+  </div>
+</div>
+
+<div class="photo-block">
+  <img src="images/unit1 (5).jpg" alt="Cat laying on back">
+  <div class="photo-info">
+    <h3>Carefree Stretch</h3>
+    <p>A playful pose showing vulnerability and freedom in a familiar space.</p>
+    <p><strong>Composition:</strong> Diagonal line of the body adds energy and motion.</p>
+    <p><strong>Lighting:</strong> Flash lighting freezes the motion and sharpens shadows.</p>
+    <p><strong>Element of Design:</strong> Contrast—light body against dark blanket creates separation.</p>
+    <p><strong>Principle of Design:</strong> Variety—textures, tones, and angles provide visual interest.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement5')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement5">
+      <p><strong>WHAT:</strong> I caught my cat mid-stretch with its belly exposed and paws curled playfully.</p>
+      <p><strong>HOW:</strong> I quickly took the photo using my phone's burst mode and direct indoor light to freeze the motion.</p>
+      <p><strong>WHY:</strong> This moment shows the trust and playfulness that animals offer when they feel truly at home.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (5).jpg" alt="Cat laying on back">
-      <div class="photo-info">
-        <h3>Carefree Stretch</h3>
-        <p>A playful pose showing vulnerability and freedom in a familiar space.</p>
-        <p><strong>Composition:</strong> Diagonal line of the body adds energy and motion.</p>
-        <p><strong>Lighting:</strong> Flash lighting freezes the motion and sharpens shadows.</p>
-        <p><strong>Element of Design:</strong> Contrast—light body against dark blanket creates separation.</p>
-        <p><strong>Principle of Design:</strong> Variety—textures, tones, and angles provide visual interest.</p>
-      </div>
+  </div>
+</div>
+
+<div class="photo-block">
+  <img src="images/unit1 (6).jpg" alt="Cat surrounded by plush toys">
+  <div class="photo-info">
+    <h3>Playtime Charm</h3>
+    <p>A scene of a cat with toys captures whimsy and youthful spirit.</p>
+    <p><strong>Composition:</strong> Centered subject with balance on both sides of the image.</p>
+    <p><strong>Lighting:</strong> Indoor artificial light enhances the cozy, playful mood.</p>
+    <p><strong>Element of Design:</strong> Color—bright plush toys add a pop to the muted environment.</p>
+    <p><strong>Principle of Design:</strong> Unity—each object contributes to a single theme.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement6')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement6">
+      <p><strong>WHAT:</strong> My cat sits surrounded by plush toys in a symmetrical, playful arrangement.</p>
+      <p><strong>HOW:</strong> I placed the toys evenly and used my phone camera to shoot from slightly above with warm white lighting.</p>
+      <p><strong>WHY:</strong> I wanted to create a childlike sense of joy through everyday objects and my pet’s calm posture.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (6).jpg" alt="Cat surrounded by plush toys">
-      <div class="photo-info">
-        <h3>Playtime Charm</h3>
-        <p>A scene of a cat with toys captures whimsy and youthful spirit.</p>
-        <p><strong>Composition:</strong> Centered subject with balance on both sides of the image.</p>
-        <p><strong>Lighting:</strong> Indoor artificial light enhances the cozy, playful mood.</p>
-        <p><strong>Element of Design:</strong> Color—bright plush toys add a pop to the muted environment.</p>
-        <p><strong>Principle of Design:</strong> Unity—each object contributes to a single theme.</p>
-      </div>
+  </div>
+</div>
+
+<div class="photo-block">
+  <img src="images/unit1 (7).jpg" alt="Cat shot through a circular paper frame">
+  <div class="photo-info">
+    <h3>Framed Curiosity</h3>
+    <p>A cat gazes through a circular paper opening, as if peeking into another world.</p>
+    <p><strong>Composition:</strong> Foreground framing with paper leads attention to the center.</p>
+    <p><strong>Lighting:</strong> Spotlight draws focus sharply to the face and objects.</p>
+    <p><strong>Element of Design:</strong> Space—the framing suggests depth and curiosity.</p>
+    <p><strong>Principle of Design:</strong> Focus—the center becomes a visual destination.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement7')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement7">
+      <p><strong>WHAT:</strong> A creative view of my cat seen through a circular cutout made from paper.</p>
+      <p><strong>HOW:</strong> I placed the paper at arm’s length and used my phone’s portrait mode to blur the foreground while keeping my cat’s face sharp.</p>
+      <p><strong>WHY:</strong> This shot explores how we observe the world through frames and how attention changes with focus and angle.</p>
     </div>
-    <div class="photo-block">
-      <img src="images/unit1 (7).jpg" alt="Cat shot through a circular paper frame">
-      <div class="photo-info">
-        <h3>Framed Curiosity</h3>
-        <p>A cat gazes through a circular paper opening, as if peeking into another world.</p>
-        <p><strong>Composition:</strong> Foreground framing with paper leads attention to the center.</p>
-        <p><strong>Lighting:</strong> Spotlight draws focus sharply to the face and objects.</p>
-        <p><strong>Element of Design:</strong> Space—the framing suggests depth and curiosity.</p>
-        <p><strong>Principle of Design:</strong> Focus—the center becomes a visual destination.</p>
-      </div>
-    </div>
+  </div>
+</div>
   </div>
 </body>
 </html>
