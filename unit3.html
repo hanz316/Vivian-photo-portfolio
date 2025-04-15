@@ -57,7 +57,41 @@
     .photo-info p {
       margin: 5px 0;
     }
+    .artist-toggle {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 20px;
+      font-size: 0.95em;
+      font-weight: bold;
+      background-color: #c7a5e6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .artist-toggle:hover {
+      background-color: #a76dff;
+    }
+    .artist-statement {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 10px 20px 20px;
+      padding: 15px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      display: none;
+      font-size: 0.95em;
+    }
+    .artist-statement p {
+      margin-bottom: 10px;
+    }
   </style>
+  <script>
+    function toggleStatement(id) {
+      const box = document.getElementById(id);
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
   <h1>Unit 3: Narrative Moments</h1>
@@ -65,42 +99,64 @@
     This unit focuses on telling emotional stories through the eyes of animals. Through quiet scenes and specific framing, these images explore themes of solitude, curiosity, and companionship from a non-human perspective.
   </p>
   <div class="gallery">
-    <div class="photo-block">
-      <img src="images/u3-1.png" alt="Horse walking into dusk">
-      <div class="photo-info">
-        <h3>Twilight Crossing</h3>
-        <p>A lone horse walks into the fading light, symbolizing transition and independence.</p>
-        <p><strong>Composition:</strong> Rule of thirds places the horse off-center for balance and depth.</p>
-        <p><strong>Lighting:</strong> Natural backlighting creates a silhouette effect and a dramatic sunset tone.</p>
-        <p><strong>Element of Design:</strong> Line—pathway and horizon lead the viewer’s eye inward.</p>
-        <p><strong>Principle of Design:</strong> Movement—viewers are visually pulled forward with the horse.</p>
-      </div>
-    </div>
 
-    <div class="photo-block">
-      <img src="images/u3-2.png" alt="Cat by rainy window">
-      <div class="photo-info">
-        <h3>Rain Watcher</h3>
-        <p>A cat quietly observes the world through a rain-speckled window, evoking stillness and thought.</p>
-        <p><strong>Composition:</strong> Centered subject within square framing creates symmetry and calm.</p>
-        <p><strong>Lighting:</strong> Diffused window light softens shadows and brings detail to the glass.</p>
-        <p><strong>Element of Design:</strong> Value—light and shadow create emotional tone.</p>
-        <p><strong>Principle of Design:</strong> Emphasis—the contrast between cat and background draws the eye.</p>
-      </div>
+<!-- 第一张 -->
+<div class="photo-block">
+  <img src="images/u3-1.png" alt="Horse walking into dusk">
+  <div class="photo-info">
+    <h3>Twilight Crossing</h3>
+    <p>A lone horse walks into the fading light, symbolizing transition and independence.</p>
+    <p><strong>Composition:</strong> Rule of thirds places the horse off-center for balance and depth.</p>
+    <p><strong>Lighting:</strong> Natural backlighting creates a silhouette effect and a dramatic sunset tone.</p>
+    <p><strong>Element of Design:</strong> Line—pathway and horizon lead the viewer’s eye inward.</p>
+    <p><strong>Principle of Design:</strong> Movement—viewers are visually pulled forward with the horse.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement31')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement31">
+      <p><strong>WHAT:</strong> A silhouette image of a horse walking away under twilight colors, alone on an open path.</p>
+      <p><strong>HOW:</strong> I used my phone to capture the horse against a low sunset using manual exposure for dramatic contrast and depth.</p>
+      <p><strong>WHY:</strong> This piece reflects themes of independence and leaving behind familiarity—viewed from an animal’s narrative perspective.</p>
     </div>
-
-    <div class="photo-block">
-      <img src="images/u3-3.png" alt="Cat under table">
-      <div class="photo-info">
-        <h3>Hidden Pause</h3>
-        <p>A cautious cat hides under a table, capturing a moment of tension and awareness.</p>
-        <p><strong>Composition:</strong> Framed by furniture edges to guide the viewer into the subject’s space.</p>
-        <p><strong>Lighting:</strong> Side lighting adds dimensionality and shadows to the corners.</p>
-        <p><strong>Element of Design:</strong> Space—the open floor creates negative space around the subject.</p>
-        <p><strong>Principle of Design:</strong> Contrast—between light/hidden, soft/focused, cat/floor.</p>
-      </div>
-    </div>
-
   </div>
+</div>
+
+<!-- 第二张 -->
+<div class="photo-block">
+  <img src="images/u3-2.png" alt="Cat by rainy window">
+  <div class="photo-info">
+    <h3>Rain Watcher</h3>
+    <p>A cat quietly observes the world through a rain-speckled window, evoking stillness and thought.</p>
+    <p><strong>Composition:</strong> Centered subject within square framing creates symmetry and calm.</p>
+    <p><strong>Lighting:</strong> Diffused window light softens shadows and brings detail to the glass.</p>
+    <p><strong>Element of Design:</strong> Value—light and shadow create emotional tone.</p>
+    <p><strong>Principle of Design:</strong> Emphasis—the contrast between cat and background draws the eye.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement32')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement32">
+      <p><strong>WHAT:</strong> A quiet moment of my cat watching raindrops fall from the inside of a window, lost in thought.</p>
+      <p><strong>HOW:</strong> Shot using my phone in portrait mode with natural light from behind the glass, with the window creating a filter of mood.</p>
+      <p><strong>WHY:</strong> This piece symbolizes reflection, waiting, and calmness—emotions we often share with animals but never express aloud.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 第三张 -->
+<div class="photo-block">
+  <img src="images/u3-3.png" alt="Cat under table">
+  <div class="photo-info">
+    <h3>Hidden Pause</h3>
+    <p>A cautious cat hides under a table, capturing a moment of tension and awareness.</p>
+    <p><strong>Composition:</strong> Framed by furniture edges to guide the viewer into the subject’s space.</p>
+    <p><strong>Lighting:</strong> Side lighting adds dimensionality and shadows to the corners.</p>
+    <p><strong>Element of Design:</strong> Space—the open floor creates negative space around the subject.</p>
+    <p><strong>Principle of Design:</strong> Contrast—between light/hidden, soft/focused, cat/floor.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement33')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement33">
+      <p><strong>WHAT:</strong> A low-angle capture of my cat under the table in a moment of pause and alertness.</p>
+      <p><strong>HOW:</strong> I placed the camera low and used my phone’s wide-angle setting, focusing on space and tension created by shadows.</p>
+      <p><strong>WHY:</strong> The work shows hesitation and vulnerability from a pet’s view—reminding us that even the quietest beings can feel uncertainty.</p>
+    </div>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
