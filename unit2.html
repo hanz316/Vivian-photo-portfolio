@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unit 2 - Vivian Li</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -57,7 +57,41 @@
     .photo-info p {
       margin: 5px 0;
     }
+    .artist-toggle {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 20px;
+      font-size: 0.95em;
+      font-weight: bold;
+      background-color: #c7a5e6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .artist-toggle:hover {
+      background-color: #a76dff;
+    }
+    .artist-statement {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 10px 20px 20px;
+      padding: 15px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      display: none;
+      font-size: 0.95em;
+    }
+    .artist-statement p {
+      margin-bottom: 10px;
+    }
   </style>
+  <script>
+    function toggleStatement(id) {
+      const box = document.getElementById(id);
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
   <h1>Unit 2: New Perspectives</h1>
@@ -65,66 +99,102 @@
     This unit embraces creative reinterpretation and abstract storytelling. Using digital editing and mixed media, I explored themes of identity, awareness, and sustainability through visual experimentation.
   </p>
   <div class="gallery">
-    <div class="photo-block">
-      <img src="images/unit2 (1).jpg" alt="Digital collage COVID">
-      <div class="photo-info">
-        <h3>Screened Reality</h3>
-        <p>A digital collage mixing pandemic visuals and personal objects to reflect isolation and global awareness.</p>
-        <p><strong>Composition:</strong> Layered montage offers chaos and cohesion simultaneously.</p>
-        <p><strong>Lighting:</strong> Artificial composited light simulates news-like urgency.</p>
-        <p><strong>Element of Design:</strong> Shape—cutouts overlap to form complexity.</p>
-        <p><strong>Principle of Design:</strong> Contrast—sharp edges vs. soft color fields convey tension.</p>
-      </div>
-    </div>
 
-    <div class="photo-block">
-      <img src="images/unit2 (2).jpg" alt="Portrait in red and blue">
-      <div class="photo-info">
-        <h3>Dual Self</h3>
-        <p>A split-tone portrait visualizing the psychological duality of personal identity.</p>
-        <p><strong>Composition:</strong> Symmetry through mirrored halves emphasizes tension.</p>
-        <p><strong>Lighting:</strong> Colored gels cast opposing tones across the face.</p>
-        <p><strong>Element of Design:</strong> Color—red and blue dominate the emotional tone.</p>
-        <p><strong>Principle of Design:</strong> Emphasis—the face remains central and confronting.</p>
-      </div>
+<!-- 第一张 -->
+<div class="photo-block">
+  <img src="images/unit2 (1).jpg" alt="Digital collage COVID">
+  <div class="photo-info">
+    <h3>Screened Reality</h3>
+    <p>A digital collage mixing pandemic visuals and personal objects to reflect isolation and global awareness.</p>
+    <p><strong>Composition:</strong> Layered montage offers chaos and cohesion simultaneously.</p>
+    <p><strong>Lighting:</strong> Artificial composited light simulates news-like urgency.</p>
+    <p><strong>Element of Design:</strong> Shape—cutouts overlap to form complexity.</p>
+    <p><strong>Principle of Design:</strong> Contrast—sharp edges vs. soft color fields convey tension.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement21')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement21">
+      <p><strong>WHAT:</strong> I created a collage of pandemic-related symbols such as masks and digital screens blended with hand-drawn icons and textures.</p>
+      <p><strong>HOW:</strong> I used free mobile collage apps to compile images and adjust layer opacity and texture filters. All assets were collected digitally.</p>
+      <p><strong>WHY:</strong> This was my response to digital burnout and emotional overload during lockdowns, visually representing chaos within information.</p>
     </div>
-
-    <div class="photo-block">
-      <img src="images/unit2 (3).jpg" alt="Surreal cat eye">
-      <div class="photo-info">
-        <h3>Reflective Portal</h3>
-        <p>A surreal view through a cat's eye offers new perspective on scale and environment.</p>
-        <p><strong>Composition:</strong> Extreme close-up magnifies details and distortion.</p>
-        <p><strong>Lighting:</strong> Back lighting enhances reflection and clarity in the eye.</p>
-        <p><strong>Element of Design:</strong> Texture—fur and glassy eye surface stand in contrast.</p>
-        <p><strong>Principle of Design:</strong> Focus—only the pupil is sharp, directing attention.</p>
-      </div>
-    </div>
-
-    <div class="photo-block">
-      <img src="images/unit2 (4).jpg" alt="Candle in dark">
-      <div class="photo-info">
-        <h3>Solitary Glow</h3>
-        <p>A candle burns alone in the darkness, symbolizing hope and quiet endurance.</p>
-        <p><strong>Composition:</strong> Centered and minimal, reinforcing isolation.</p>
-        <p><strong>Lighting:</strong> Low key lighting emphasizes warmth in dark tones.</p>
-        <p><strong>Element of Design:</strong> Value—shadows define depth and mood.</p>
-        <p><strong>Principle of Design:</strong> Unity—elements support a consistent emotional tone.</p>
-      </div>
-    </div>
-
-    <div class="photo-block">
-      <img src="images/unit2 (5).jpg" alt="Eco-portrait with bamboo cup">
-      <div class="photo-info">
-        <h3>Sustainable Self</h3>
-        <p>A portrait holding eco-tools to reflect conscious living and environmental identity.</p>
-        <p><strong>Composition:</strong> Triangular composition with hand, face, and object.</p>
-        <p><strong>Lighting:</strong> Soft front lighting gives clarity and natural tones.</p>
-        <p><strong>Element of Design:</strong> Line—the bamboo straw points up toward the subject’s face.</p>
-        <p><strong>Principle of Design:</strong> Balance—objects are visually equal across the frame.</p>
-      </div>
-    </div>
-
   </div>
+</div>
+
+<!-- 第二张 -->
+<div class="photo-block">
+  <img src="images/unit2 (2).jpg" alt="Portrait in red and blue">
+  <div class="photo-info">
+    <h3>Dual Self</h3>
+    <p>A split-tone portrait visualizing the psychological duality of personal identity.</p>
+    <p><strong>Composition:</strong> Symmetry through mirrored halves emphasizes tension.</p>
+    <p><strong>Lighting:</strong> Colored gels cast opposing tones across the face.</p>
+    <p><strong>Element of Design:</strong> Color—red and blue dominate the emotional tone.</p>
+    <p><strong>Principle of Design:</strong> Emphasis—the face remains central and confronting.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement22')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement22">
+      <p><strong>WHAT:</strong> A stylized self-portrait that splits my face into warm and cool tones.</p>
+      <p><strong>HOW:</strong> I used my phone camera and two colored flashlights to create contrast. I edited color balance in Snapseed.</p>
+      <p><strong>WHY:</strong> It represents the inner tension of emotion vs. logic, and how identity is never just one side.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 第三张 -->
+<div class="photo-block">
+  <img src="images/unit2 (3).jpg" alt="Surreal cat eye">
+  <div class="photo-info">
+    <h3>Reflective Portal</h3>
+    <p>A surreal view through a cat's eye offers new perspective on scale and environment.</p>
+    <p><strong>Composition:</strong> Extreme close-up magnifies details and distortion.</p>
+    <p><strong>Lighting:</strong> Back lighting enhances reflection and clarity in the eye.</p>
+    <p><strong>Element of Design:</strong> Texture—fur and glassy eye surface stand in contrast.</p>
+    <p><strong>Principle of Design:</strong> Focus—only the pupil is sharp, directing attention.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement23')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement23">
+      <p><strong>WHAT:</strong> A macro image of my cat’s eye with a distorted view of the room inside.</p>
+      <p><strong>HOW:</strong> I used my phone’s macro lens mode and had to take many shots in soft light until reflection aligned.</p>
+      <p><strong>WHY:</strong> I wanted to experiment with animal perspective and show how the world might be seen from another’s eye.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 第四张 -->
+<div class="photo-block">
+  <img src="images/unit2 (4).jpg" alt="Candle in dark">
+  <div class="photo-info">
+    <h3>Solitary Glow</h3>
+    <p>A candle burns alone in the darkness, symbolizing hope and quiet endurance.</p>
+    <p><strong>Composition:</strong> Centered and minimal, reinforcing isolation.</p>
+    <p><strong>Lighting:</strong> Low key lighting emphasizes warmth in dark tones.</p>
+    <p><strong>Element of Design:</strong> Value—shadows define depth and mood.</p>
+    <p><strong>Principle of Design:</strong> Unity—elements support a consistent emotional tone.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement24')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement24">
+      <p><strong>WHAT:</strong> A single wax candle placed in total darkness to stand alone in the frame.</p>
+      <p><strong>HOW:</strong> I used my phone in manual exposure mode, turned off all lights, and stabilized on a desk for sharpness.</p>
+      <p><strong>WHY:</strong> The image stands for quiet strength and the idea of internal energy glowing when nothing else is visible.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 第五张 -->
+<div class="photo-block">
+  <img src="images/unit2 (5).jpg" alt="Eco-portrait with bamboo cup">
+  <div class="photo-info">
+    <h3>Sustainable Self</h3>
+    <p>A portrait holding eco-tools to reflect conscious living and environmental identity.</p>
+    <p><strong>Composition:</strong> Triangular composition with hand, face, and object.</p>
+    <p><strong>Lighting:</strong> Soft front lighting gives clarity and natural tones.</p>
+    <p><strong>Element of Design:</strong> Line—the bamboo straw points up toward the subject’s face.</p>
+    <p><strong>Principle of Design:</strong> Balance—objects are visually equal across the frame.</p>
+    <button class="artist-toggle" onclick="toggleStatement('statement25')">Show/Hide Artist Statement</button>
+    <div class="artist-statement" id="statement25">
+      <p><strong>WHAT:</strong> I posed holding a bamboo cup and reusable straw to share my beliefs in sustainability.</p>
+      <p><strong>HOW:</strong> Taken with my phone using a timer and front camera with daylight from a window to keep it clean and natural.</p>
+      <p><strong>WHY:</strong> I wanted the photo to act like an environmental ad, showing lifestyle choices visually.</p>
+    </div>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
