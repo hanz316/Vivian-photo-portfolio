@@ -3,189 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 3: Narrative Moments</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Unit 3 - Vivian Li</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'DM Sans', sans-serif;
-      margin: 0;
       background: linear-gradient(to right, #fef6ff, #f0e4f8);
       color: #222;
+      padding: 40px;
+      line-height: 1.6;
     }
-    header, footer {
-      background-color: rgba(85, 65, 130, 0.75);
-      color: #f7d6ff;
-      text-align: center;
-      padding: 30px;
-      backdrop-filter: blur(8px);
-    }
-    header h1 {
+    h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3em;
+      text-align: center;
+      margin-bottom: 10px;
     }
-    nav {
-      margin-top: 15px;
+    .description {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gallery {
       display: flex;
-      justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
     }
-    nav a {
-      background-color: #fff0f8;
-      color: #553c9a;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-weight: bold;
-      border: 2px solid #a76dff;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      background-color: #a76dff;
-      color: #fff;
-      transform: scale(1.05);
-    }
-    .container {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.6);
+    .photo-block {
+      max-width: 320px;
+      background: #fff;
       border-radius: 20px;
-      backdrop-filter: blur(12px);
-      position: relative;
-      text-align: center;
-    }
-    h2 {
-      font-size: 2em;
-      font-family: 'Great Vibes', cursive;
-      color: #553c9a;
-      margin-bottom: 30px;
-    }
-    .carousel {
-      position: relative;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
       overflow: hidden;
+      transition: transform 0.3s ease;
     }
-    .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .photo-block img {
       width: 100%;
-      opacity: 0;
-      transition: opacity 0.8s ease, transform 0.6s ease;
-      transform: scale(0.95);
-    }
-    .slide.active {
-      position: relative;
-      opacity: 1;
-      transform: scale(1);
-      z-index: 1;
-    }
-    .slide img {
-      max-width: 100%;
       height: auto;
-      max-height: 360px;
-      object-fit: contain;
-      border-radius: 12px;
-      margin-bottom: 15px;
+      display: block;
     }
-    .slide h3 {
-      font-size: 1.3em;
-      margin: 0;
-      color: #4a2f8c;
+    .photo-info {
+      padding: 15px 20px;
     }
-    .slide p {
-      margin-top: 8px;
-      font-size: 1em;
-      color: #333;
+    .photo-info h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-family: 'Great Vibes', cursive;
     }
-    .nav-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(85, 65, 130, 0.7);
-      color: white;
-      border: none;
-      font-size: 2em;
-      padding: 10px 16px;
-      cursor: pointer;
-      border-radius: 50%;
-      z-index: 2;
-    }
-    .nav-arrow:hover {
-      background: rgba(85, 65, 130, 1);
-    }
-    #prevBtn { left: -20px; }
-    #nextBtn { right: -20px; }
-    footer {
-      background-color: rgba(85, 65, 130, 0.75);
-      color: #f7d6ff;
-      padding: 30px;
-      text-align: center;
-      backdrop-filter: blur(8px);
+    .photo-info p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Unit 3: Narrative Moments</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="unit1.html">Unit 1</a>
-      <a href="unit2.html">Unit 2</a>
-      <a href="unit3.html">Unit 3</a>
-      <a href="inspiration.html">Inspiration</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <div class="container">
-    <h2>Click to Navigate Through Moments</h2>
-    <div class="carousel">
-      <div class="slide active">
-        <img src="images/u3-1.png" alt="Horse walking into dusk">
+  <h1>Unit 3: Narrative Moments</h1>
+  <p class="description">
+    This unit focuses on telling emotional stories through the eyes of animals. Through quiet scenes and specific framing, these images explore themes of solitude, curiosity, and companionship from a non-human perspective.
+  </p>
+  <div class="gallery">
+    <div class="photo-block">
+      <img src="images/u3-1.png" alt="Horse walking into dusk">
+      <div class="photo-info">
         <h3>Twilight Crossing</h3>
-        <p>A lone horse walks into the fading light — symbolizing quiet transitions and journey.</p>
+        <p>A lone horse walks into the fading light, symbolizing transition and independence.</p>
+        <p><strong>Composition:</strong> Rule of thirds places the horse off-center for balance and depth.</p>
+        <p><strong>Lighting:</strong> Natural backlighting creates a silhouette effect and a dramatic sunset tone.</p>
+        <p><strong>Element of Design:</strong> Line—pathway and horizon lead the viewer’s eye inward.</p>
+        <p><strong>Principle of Design:</strong> Movement—viewers are visually pulled forward with the horse.</p>
       </div>
-      <div class="slide">
-        <img src="images/u3-2.png" alt="Cat by rainy window">
-        <h3>Rain Watcher</h3>
-        <p>A domestic cat stares out the misty window, a moment filled with longing and calm observation.</p>
-      </div>
-      <div class="slide">
-        <img src="images/u3-3.png" alt="Black cat under table">
-        <h3>Hidden Pause</h3>
-        <p>A cat sits alert under a table, quiet yet aware — capturing a tense but thoughtful silence.</p>
-      </div>
-      <button class="nav-arrow" id="prevBtn">❮</button>
-      <button class="nav-arrow" id="nextBtn">❯</button>
     </div>
+
+    <div class="photo-block">
+      <img src="images/u3-2.png" alt="Cat by rainy window">
+      <div class="photo-info">
+        <h3>Rain Watcher</h3>
+        <p>A cat quietly observes the world through a rain-speckled window, evoking stillness and thought.</p>
+        <p><strong>Composition:</strong> Centered subject within square framing creates symmetry and calm.</p>
+        <p><strong>Lighting:</strong> Diffused window light softens shadows and brings detail to the glass.</p>
+        <p><strong>Element of Design:</strong> Value—light and shadow create emotional tone.</p>
+        <p><strong>Principle of Design:</strong> Emphasis—the contrast between cat and background draws the eye.</p>
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/u3-3.png" alt="Cat under table">
+      <div class="photo-info">
+        <h3>Hidden Pause</h3>
+        <p>A cautious cat hides under a table, capturing a moment of tension and awareness.</p>
+        <p><strong>Composition:</strong> Framed by furniture edges to guide the viewer into the subject’s space.</p>
+        <p><strong>Lighting:</strong> Side lighting adds dimensionality and shadows to the corners.</p>
+        <p><strong>Element of Design:</strong> Space—the open floor creates negative space around the subject.</p>
+        <p><strong>Principle of Design:</strong> Contrast—between light/hidden, soft/focused, cat/floor.</p>
+      </div>
+    </div>
+
   </div>
-  <footer>
-    &copy; 2025 Vivian Li | Unit 3: Narrative Moments
-  </footer>
-
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentIndex = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-      });
-      slides[index].classList.add('active');
-    }
-
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showSlide(currentIndex);
-    });
-
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    });
-  </script>
 </body>
 </html>
